@@ -5,11 +5,8 @@ from sklearn.preprocessing import StandardScaler
 import pickle
 
 # Load the model
-with open('best_model.pkl', 'rb') as f:
+with open('Gbr_best_model.pkl', 'rb') as f:
     best_model = pickle.load(f)
-
-with open('uber_scaled (1).pkl', 'rb') as f:
-    scaler = pickle.load(f)
 
 st.set_page_config(page_title="Uber Trip Prediction", page_icon="🚖", layout="centered")
 st.title('🚖 Uber Trip Analysis Prediction')
